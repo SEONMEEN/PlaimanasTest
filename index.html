@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Practical Test</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-links" id="dropdown-btn">
+                            TH-THB <span class="arrow">▼</span>
+                        </a>
+                        <ul class="dropdown-content" id="my-dropdown">
+                            <li><a href="#">US-USD</a></li>
+                        </ul>
+                    </li>
+                    <div class="desktop-menu">
+                        <li><a href="#">WOMEN</a></li>
+                        <li><a href="#">COLLECTIONS</a></li>
+                        <li class="editorial-dropdown">
+                            <a href="#">EDITORIAL</a>
+                            <div class="editorial-hover-content">
+                                <a href="#">ASC</a>
+                                <a href="#">BAZAAR</a>
+                                <a href="#">ELLE</a>
+                                <a href="#">GQ</a>  
+                            </div>
+                        </li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">STORIES</a></li>
+                    </div>
+                    <li>
+                        <a href="#" class="nav-links" id="menu-btn">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </a>
+                    </li>
+
+                    <div class="user-signin">
+                        <a href="#">SIGN IN</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="bag-icon">
+                            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+
+                    </div>
+                </ul>
+            </nav>
+            <div class="plaimanas-text">PLAIMANAS</div>
+        </div>
+    </header>
+    <div id="menu-screen" class="full-screen-overlay">
+        <nav class="menu-content">
+            <a href="#">WOMEN</a>
+            <a href="#">COLLECTIONS</a>
+            <a href="#" id="editorial-link">EDITORIAL <span class="arrow">▼</span></a>
+            <div id="editorial-content" class="editorial-content">
+                <div class="content">
+                    <a href="#">ASC</a>
+                    <a href="#">BAZAAR</a>
+                    <a href="#">GQ</a>
+                    <a href="#">L'OFFIAL THAILAND</a>
+                    <a href="#">NUMERO</a>
+                    <a href="#">VOGUE</a>
+                </div>
+            </div>
+            <!-- <a href="#">ASC</a>
+            <a href="#">BAZAAR</a>
+            <a href="#">GQ</a>
+            <a href="#">L'OFFIAL THAILAND</a>
+            <a href="#">NUMERO</a>
+            <a href="#">VOGUE</a> -->
+            <a href="#">NEWS</a>
+            <a href="#">STORIES</a>
+        </nav>
+        <h1 class="text-full-screen-overlay">PLAIMANAS</h1>
+    </div>
+    <main>
+        <section class="video-container">
+            <video autoplay muted loop playsinline class="bg-video">
+                <source src="assets/videos/mockup_video576.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section class="content-container">
+            <div class="image-1">
+                <div class="img-new">
+                    <img class="img-1" src="assets/images/7b6529a12a4f5ab332188c7dac157175d7d93817.jpg" alt=""
+                        srcset="">
+                    <h1>NEW</h1>
+                </div>
+                <div class="image-detail">
+                    <h2>Sed egestas, nibh a condimentum imperdiet</h2>
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores hic qui veniam fugit
+                        temporibus optio rerum ad praesentium voluptatem exercitationem.</span>
+                </div>
+            </div>
+            <div class="image-1">
+                <div class="img-new">
+                    <video autoplay muted loop playsinline class="content-video">
+                        <source src="assets/videos/DTS_THE_LEADER_Joey_Bania_Clips_ID11.mp4" type="video/mp4">
+                    </video>
+                    <h1>BESTSELLER</h1>
+                </div>
+                <div class="image-detail">
+                    <h2>Sed egestas, nibh a condimentum imperdiet</h2>
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores hic qui veniam fugit
+                        temporibus optio rerum ad praesentium voluptatem exercitationem.</span>
+
+                </div>
+            </div>
+            <section class="grid-layout">
+                <div class="grid-item item-main">
+                    <img src="assets/images/c6b2c87677418227a1bb072efb7bec28f1a54014.jpg" alt="Main Image"
+                        class="img-front">
+                    <video autoplay muted loop playsinline class="content-video img-back">
+                        <source src="assets/videos/DTS_THE_LEADER_Joey_Bania_Clips_ID11.mp4" type="video/mp4">
+                    </video>
+                    <h1>COLLECTION 01</h1>
+                </div>
+
+                <div class="grid-item">
+                    <img src="assets/images/f5a8b21b615bf2137dab5ecf7747b3b5503e057d.jpg" alt="Sub Image 1"
+                        class="img-front">
+                    <img src="assets/images/3a8cff66f948def649520bc34a8a29886b2baad9.jpg" alt="Sub Image 1"
+                        class="img-back">
+                    <h2>COLLECTION <br>02</h2>
+                </div>
+
+                <div class="grid-item">
+                    <img src="assets/images/fe05c5d37eb2c0d3b5a0c02ddcc0cc05aa72320e.jpg" alt="Sub Image 2"
+                        class="img-front">
+                    <img src="assets/images/3a8cff66f948def649520bc34a8a29886b2baad9.jpg" alt="Sub Image 2"
+                        class="img-back">
+                    <h2>COLLECTION<br> 03</h2>
+                </div>
+
+            </section>
+            <div class="scrolling-container">
+                <div class="scrolling-content">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" fill="currentColor"
+                            class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                        </svg>
+                        BEST SELLER
+                        <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        </svg>
+                        NEW ARRIVAL
+                        <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" fill="currentColor"
+                            class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                        </svg>
+                        BEST SELLER
+                        <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                        </svg>
+                        NEW ARRIVAL
+                    </span>
+                </div>
+            </div>
+            <section class="grid-layout-3col">
+                <div class="grid-item">
+                    <h2>Worldwide shipping</h2>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sit illum, iusto dolores
+                        beatae vitae ex vel nostrum nobis, facere ipsam quaerat ut voluptatem veniam minima modi! Atque,
+                        iure repellendus?</h3>
+
+                </div>
+
+                <div class="grid-item">
+                    <h2>customer service</h2>
+                    <h3> <span class="highlight-text">Lorem ipsum dolor sit amet</span> consectetur adipisicing elit.
+                        Voluptas, sit illum, iusto dolores beatae vitae ex vel nostrum nobis, facere ipsam quaerat ut
+                        voluptatem veniam minima modi! Atque, iure repellendus?</h3>
+                </div>
+
+                <div class="grid-item">
+                    <h2>secure payment</h2>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sit illum, iusto dolores
+                        beatae vitae ex vel nostrum nobis, facere ipsam quaerat ut voluptatem veniam minima modi! Atque,
+                        iure repellendus?</h3>
+                </div>
+            </section>
+            <div class="tab-section">
+                <h1>FREQUENTLY ASKED QUESTIONS</h1>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, corporis?</span>
+                <div class="tab-menu">
+                    <button class="tab-btn" disabled>ORDERS</button>
+                    <button class="tab-btn active" data-target="shipping">SHIPPING</button>
+                    <button class="tab-btn " data-target="returnandexchanges">RETURNS & EXCHANGES</button>
+                    <button class="tab-btn" disabled>SIZING & PRODUCTS</button>
+                </div>
+
+                <div class="tab-container">
+
+                    <div id="shipping" class="tab-content active">
+
+                        <div class="expand-section">
+                            <div class="expand-header">
+                                <h2>DO YOU OFFER INTERNATIONAL SHIPPING?</h2>
+                                <button type="button" class="expand-btn" onclick="toggleExpand(this)"
+                                    title="Toggle answer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="expand-content">
+                                <div class="content-inner">
+                                    <p>Items can be returned within 14 days of receipt, provided they are unworn,
+                                        unwashed, and in original condition with tags attached.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="long-line">
+
+                        <div class="expand-section">
+                            <div class="expand-header">
+                                <h2>HOW LONG DOES DELIVERY TAKE?</h2>
+                                <button type="button" disabled class="expand-btn" onclick="toggleExpand(this)"
+                                    title="Toggle answer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="expand-content">
+                                <div class="content-inner">
+                                    <p>Items can be returned within 14 days of receipt, provided they are unworn,
+                                        unwashed, and in original condition with tags attached.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="long-line">
+
+                        <div class="expand-section">
+                            <div class="expand-header">
+                                <h2>HOW CAN I TRACK MY ORDER?</h2>
+                                <button type="button" disabled class="expand-btn" onclick="toggleExpand(this)"
+                                    title="Toggle answer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="expand-content">
+                                <div class="content-inner">
+                                    <p>Items can be returned within 14 days of receipt, provided they are unworn,
+                                        unwashed, and in original condition with tags attached.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="long-line">
+                    </div>
+
+
+                    <div id="returnandexchanges" class="tab-content">
+                        <div class="expand-section">
+                            <div class="expand-header">
+                                <h2>What is your return policy?</h2>
+                                <button type="button" class="expand-btn" onclick="toggleExpand(this)"
+                                    title="Toggle answer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="expand-content">
+                                <div class="content-inner">
+                                    <p>Items can be returned within 14 days of receipt, provided they are unworn,
+                                        unwashed, and in original condition with tags attached.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="long-line">
+
+                        <div class="expand-section">
+                            <div class="expand-header">
+                                <h2>Can I exchange for a different size?</h2>
+                                <button type="button" disabled class="expand-btn" onclick="toggleExpand(this)"
+                                    title="Toggle answer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="expand-content">
+                                <div class="content-inner">
+                                    <p>Items can be returned within 14 days of receipt, provided they are unworn,
+                                        unwashed, and in original condition with tags attached.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="long-line">
+
+                        <div class="expand-section">
+                            <div class="expand-header">
+                                <h2>Are sale items refundable?</h2>
+                                <button type="button" disabled class="expand-btn" onclick="toggleExpand(this)"
+                                    title="Toggle answer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="expand-content">
+                                <div class="content-inner">
+                                    <p>Items can be returned within 14 days of receipt, provided they are unworn,
+                                        unwashed, and in original condition with tags attached.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="long-line">
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="contact-section">
+                <div class="header-contact">
+                    <h1>MAKE AN INQUIRY</h1>
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium illo voluptate modi est
+                        voluptatibus facilis.</span>
+                </div>
+
+                <form class="contact-form">
+                    <div class="input-group checkbox-group full-width">
+                        <input type="checkbox" id="onsite" checked disabled>
+                        <label for="onsite">Onsite</label>
+                        <input type="checkbox" id="hybrid" disabled>
+                        <label for="hybrid">Hybrid</label>
+                    </div>
+                    <div class="fullname">
+                        <input type="text" id="fname" placeholder="Full name*" required>
+                        <h5>Full name*</h5>
+                    </div>
+                    <div class="email">
+                        <input type="email" id="email" placeholder="Email*" value="Plaimanas@gmail.com" required>
+                        <h5>Email*</h5>
+                    </div>
+                    <div class="phone">
+                        <input type="tel" placeholder="Phone Number*" required pattern="[0-9]{10}">
+                        <h5>Phone Number*</h5>
+                    </div>
+                    <div class="subject-select">
+                        <select id="subject" required>
+                            <option class="subject-select-default" value="" disabled selected hidden>Subject*</option>
+                            <option value="general">General inquiry</option>
+                            <option value="support">Job Application</option>
+                            <option value="business">Media & Press</option>
+                        </select>
+                    </div>
+                    <div class="check-agree">
+                        <input type="checkbox" id="agree" required disabled>
+                        <label for="agree">I agree to all terms & conditions</label>
+                    </div>
+
+                    <input type="submit" value="SEND">
+                </form>
+
+            </div>
+            <a href="#" class="text-homepage">
+                <h4 class="text-homepage">HOMEPAGE</h4>
+            </a>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <a href="#">Women</a>
+                    <a href="#">Collections</a>
+                    <a href="#">Editorial</a>
+                    <a href="#">Stories</a>
+                </div>
+                <div class="footer-section">
+                    <h3>HELP</h3>
+                    <a href="#">Paymentt Notification</a>
+                    <a href="#">Customer Service</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="footer-section">
+                    <h3>SOCIAL</h3>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
+                <div class="footer-section">
+                    <h3>LEGAL</h3>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+                <div class="footer-section">
+                    <h3>NEWSLETTER</h3>
+                    <div class="email">
+                        <input type="email" id="email" placeholder="Email" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-section-web">
+                <h3>©PLAIMANAS</h3>
+                <h3>Web by ::*</h3>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
